@@ -1,14 +1,14 @@
 {
-  "name": "dvpl-test",
-  "version": "3.0.1",
-  "description": "converter aims to be able to directly convert between .dvpl and standard non-dvpl files.",
-  "main": "dvpl_convert.js",
+  "name": "dvpl",
+  "version": "4.0.0",
+  "description": "This converter focuses on the ease of the ability to directly convert between .dvpl and base non-dvpl files in any directory.",
+  "main": "dvpl_logic.js",
   "bin": {
     "dvpl": "dvpl.js"
   },
   "dependencies": {
-    "crc": "^3.5.0",
-    "lz4": "^0.6.3"
+    "crc": "^4.1.1",
+    "lz4": "^0.6.5"
   },
   "scripts": {
     "prepare": "echo prepare",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Maddoxkkm/dvpl_converter.git"
+    "url": "$PLACEHOLDER"
   },
-  "author": "",
+  "author": "$PLACEHOLDER",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Maddoxkkm/dvpl_converter/issues"
+    "url": "$PLACEHOLDER"
   },
-  "homepage": "https://github.com/Maddoxkkm/dvpl_converter#readme"
+  "homepage": "$PLACEHOLDER"
 }
