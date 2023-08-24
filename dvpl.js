@@ -13,7 +13,7 @@ const path = require('path');
 // Scrappy cli code
 const realArgs = process.argv.slice(2);
 if (realArgs.length === 0) {
-    throw 'No Mode selected. try dvpl --help for advices.'
+    throw 'No Mode selected. try dvpl -h for advices.'
 }
 
 const optionalArgs = realArgs.slice(1);
