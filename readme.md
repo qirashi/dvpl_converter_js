@@ -56,6 +56,7 @@ DECOMPRESSION FINISHED. DECOMPRESSED 3 files.
 - The assembly can be done using the `pkg` module.
 
 - pkg -t node18-win-x64 dvpl.js
+- pkg dvpl.js
 
 ```
   pkg [options] <input>
