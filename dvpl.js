@@ -1,9 +1,7 @@
-#!/usr/bin/env node
-
-console.log(`#    DVPL Converter 2.0 for Windows `);
-console.log(`#    Modified for the ForBlitz Team and Mod Creators! `);
-console.log(`#    RifsXD -  Fuck you motherfucker =) `);
-console.log(` `);
+console.log(`#    DVPL Converter 2.0 for Windows `)
+console.log(`#    Modified for the ForBlitz Team and Mod Creators! `)
+console.log(`#    RifsXD -  Fuck you motherfucker =) `)
+console.log(` `)
 
 // Loads everything in
 const fs = require('fs').promises
@@ -13,62 +11,59 @@ const path = require('path');
 // Scrappy cli code
 const realArgs = process.argv.slice(2);
 if (realArgs.length === 0) {
-    throw 'No Mode selected. try dvpl -h for advices.'
+    throw '#    No Mode selected. Try dvpl --help for advice.'
 }
 
 const optionalArgs = realArgs.slice(1);
 
 let keeporingals = false;
+let convertFiles = false; // FLAGS
 
 optionalArgs.forEach(arg => {
-    if (arg.toLowerCase() === '--keep-originals' || arg.toLowerCase() === '-ko' || arg.toLowerCase() === '--keep-original') keeporingals = true;
+    if (arg.toLowerCase() === '-ko') keeporingals = true;
+    if (arg.toLowerCase() === '-f') convertFiles = true;
 })
 
 switch (realArgs[0].toLowerCase()) {
-    case 'compress':
-    case 'comp':
-    case 'cp':
-    case 'c':
     case '-compress':
-    case '-comp':
-    case '-cp':
     case '-c':
     case '-с':
+    case 'compress':
+    case 'c':
     case 'с':
         // compress
         dvplRecursion(process.cwd(), keeporingals, true).then(number => {
-            console.log(`COMPRESSION FINISHED. COMPRESSED ${number} files.`)
+			console.log(` `)
+            console.log(`#    Compression is complete. Compressed: ${number} files.`)
         })
         break;
-    case 'decompress':
-    case 'decomp':
-    case 'dcp':
-    case 'd':
     case '-decompress':
-    case '-decomp':
-    case '-dcp':
     case '-d':
     case '-в':
+    case 'decompress':
+    case 'd':
     case 'в':
         dvplRecursion(process.cwd(), keeporingals, false).then(number => {
-            console.log(`DECOMPRESSION FINISHED. DECOMPRESSED ${number} files.`)
+			console.log(` `)
+            console.log(`#    Unpacking is complete. Unpacked: ${number} files.`)
         })
         // decompress
         break;
     case '--help':
-    case '-h':
     case '-help':
+    case '-h':
+    case 'help':
     case 'h':
         console.log(`
 #    dvpl [mode] [--keep-originals]
-#      -compress       (c, с)  : Compresses files into dvpl.
-#      -decompress     (d, в)  : Decompresses dvpl files into standard files.
+#      -compress       (c, c)  : Compresses files into dvpl.
+#      -decompress     (в, d)  : Decompresses dvpl files into standard files.
 #      -help           (h)     : Outputs an auxiliary message.
-#      --keep-originals (-ko)  : Saves the original file.
-        `);
+#      -ko             (-ko)   : Saves the original file.
+        `)
         break;
     default:
-        console.error('Incorrect mode selected. Use Help for information')
+        console.error('Incorrect mode selected. Use -help for information.')
 }
 
 // main code that does all the heavy lifting
