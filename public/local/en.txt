@@ -1,0 +1,14 @@
+DVPL CONVERTER to NODE JS
+- - Allows you to RECURSIVELY convert files to and from DVPL
+
+Compatibility:
+- - Platform: PC (64 bit/ 32 bit?)
+
+Using:
+- Download the latest version of the archive and installer in Release
+- Install the converter without changing the installation path
+- Use only in the FOLDER via the context menu
+
+Note:
+- The converter only works recursively!
+- Recursion is a programming term meaning a function calling itself. (The program processes all FOLDERS and SUBFOLDERS)

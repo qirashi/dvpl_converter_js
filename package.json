@@ -23,5 +23,8 @@
   "bugs": {
     "url": "$PLACEHOLDER"
   },
-  "homepage": "$PLACEHOLDER"
+  "homepage": "$PLACEHOLDER",
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
 }

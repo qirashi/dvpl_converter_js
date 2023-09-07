@@ -1,11 +1,16 @@
 # About DVPL CONVERTER JS
 
+![](public/media/1.png)
+
 `.dvpl` this is a file format that was first seen in the `World of Tanks Blitz` client for the Chinese server, and now it is used on all known clients, with the exception of files that are contained in `Android APK` or in the `Microsoft Store` client.
 
 This converter is designed for direct conversion of files to .dvpl and back. The conversion takes place recursively. You need to be careful to use it only in the folder.
 
+## How to use the converter
+* [en](public/local/en.txt)
+* [ru](public/local/ru.txt)
 
-## Set up environment for converter -
+## Set up environment for converter
 
 - For Windows, install Node.js for your environment (https://nodejs.org/en/), download the Recommended version,
   For Linux, You can install Node.js by simple Terminal Command, type 'sudo apt install nodejs npm' for Debian Based OS or 'sudo pacman -S nodejs npm' for Arch Based OS,
@@ -19,7 +24,7 @@ This converter is designed for direct conversion of files to .dvpl and back. The
     - `npm install` and then `npm install -g` if you are not root add "sudo" at the beginning of the command. ( Linux ) ///
 - Now you can execute this CLI converter anywhere with `dvpl` in commandline with the following flags `compress` / `decompress` or `c` / `d` for more info use the flag `help` ///
 
-### Example of Usage -
+### Example of Usage
 ```
 CMD C:\[NAME]> dvpl decompress
 File C:\[NAME]/[NAME]/[NAME].yaml.dvpl has been successfully decompressed into [NAME].yaml
@@ -32,7 +37,7 @@ File C:\[NAME]/[NAME]/[NAME].xml.dvpl has been successfully decompressed into [N
 DECOMPRESSION FINISHED. DECOMPRESSED 3 files.
 ```
 
-## DVPL Code Specifications -
+## DVPL Code Specifications
 
 - Starts with stream of Byte data, can be compressed or uncompressed.
 - The last 20 bytes in DVPL files are in the following format:
@@ -46,12 +51,12 @@ DECOMPRESSION FINISHED. DECOMPRESSED 3 files.
         - 3: RFC1951 (not implemented in this decompressor since it's not observed)    
     - 32-bit Magic Number represents "DVPL" literals in utf8 encoding, encoded in big-Endian.        
 
-## Libraries Used -
+## Libraries Used
 
 - `lz4` is a port of the LZ4 compression algorithm (https://github.com/pierrec/node-lz4)
 - `crc32` for crc32 calculation included in footer for DVPL.
 
-## Build to an executable file using PKG -
+## Build to an executable file using PKG
 
 - The assembly can be done using the `pkg` module.
 
