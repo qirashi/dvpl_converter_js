@@ -6,9 +6,11 @@
 
 This converter is designed for direct conversion of files to .dvpl and back. The conversion takes place recursively. You need to be careful to use it only in the folder.
 
-## How to use the converter
+## How to use the converter [You don't have to compile to work.]
 * [en](public/local/en.txt)
 * [ru](public/local/ru.txt)
+
+All the information provided below is needed only for cases in which you want to rewrite the code or compile the converter yourself. Otherwise, I strongly recommend using the installer. No external modules are required to operate the converter!
 
 ## Set up environment for converter
 

@@ -5,9 +5,9 @@ Compatibility:
 - - Platform: PC (64 bit/ 32 bit?)
 
 Using:
-- Download the latest version of the archive and installer in Release
-- Install the converter without changing the installation path
-- Use only in the FOLDER via the context menu
+- Download the latest version of the installer from "Release".
+- Install the converter without changing the installation path. (I'll fix it soon)
+- Use only in the FOLDER via the context menu.
 
 Note:
 - The converter only works recursively!
