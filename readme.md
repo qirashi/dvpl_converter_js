@@ -1,6 +1,5 @@
-> [!CAUTION]
+> [!WARNING]
 >
-> ### ATTENTION
 > Я больше не занимаюсь поддержкой и обновлением этого конвертера. Т.к я создал более удобный и лучший аналог на GoLang - [qirashi/dvpl_go](https://github.com/qirashi/dvpl_go). Он значительно быстрее работает и имеет преимущество в виде не рекурсивной конвертации, можно работать с файлом и папкой по отдельности, есть многопоточный режим.
 >
 > I am no longer engaged in the maintenance and updating of this converter. Because I have created a more convenient and better analog on GoLang - [qirashi/dvpl_go](https://github.com/qirashi/dvpl_go ). It works much faster and has the advantage of non-recursive conversion, you can work with the file and folder separately, there is a multithreaded mode.
